@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title" class="text-center">Survey Form</h1>
+
+<main>
+  <p id="description" class="text-center">Thank you for helping us improve the platform</p>
+  
+  <form id="survey-form">
+    <div class="form-group">
+      <label for="name" id="name-label">Name 
+      <input class="form-control" type="text" id="name" placeholder="Enter your name" required></label>
+    </div>
+    
+    <div class="form-group">
+    <label for="email" id="email-label">Email 
+      <input class="form-control" type="email" id="email" placeholder="Enter your email" required></label>
+    </div>
+    
+    <div class="form-group">
+    <label for="number" id="number-label">Age 
+      <input class="form-control" type="number" id="number" placeholder="Age" min=5 max=27></label>
+    </div>
+     
+    <div class="form-group">
+      <p>Select your role</p>
+      <select class="form-control" name="dropdown" id="dropdown">
+        <option value="knight">Administrator</option>
+        <option value="barbarian">Guest</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <p>Would you recommend Howl Incorporated to a friend?</p>
+      <label for="yes"><input id="yes" type="radio" value="yes" name="recommend">Absolutely</label>
+      <label for="no"><input id="no" type="radio" value="no" name="recommend">No way</label>
+    </div>
+  <div class="form-group">
+    <p>What are the fields you are interested in? <span class="smalltext">(check all that apply)</span></p>
+    <label for="Back-end"><input type="checkbox" value="back-end">Back-end</label>
+    <label for="Front-end"><input type="checkbox" value="front-end">Front-end</label>
+  
+   
+  <div class="form-group">
+    <p>We value your opinion and suggestions</p>
+    <textarea class="form-control" id="input-textarea" name="background" id="background" cols="30" rows="10" placeholder="Enter suggestions here..."></textarea>
+    <input type="submit" id="submit">
+  </div>
+    
+</form>
+</main>
+</body>
+</html>
